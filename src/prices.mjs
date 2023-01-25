@@ -83,6 +83,7 @@ function createApp(database) {
   }
 
   function isMonday(date, date2) {
+    console.log(typeof date2)
     return date.getDay() === 1;
   }
 
