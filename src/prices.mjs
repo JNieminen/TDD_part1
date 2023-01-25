@@ -32,7 +32,6 @@ function createApp(database) {
   }
   function parsePlainDate(dateString) {
     if (dateString) { 
-      console.log(Temporal.PlainDate.from(dateString).dayOfWeek);
       return Temporal.PlainDate.from(dateString); 
     }
   }
