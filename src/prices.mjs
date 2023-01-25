@@ -37,6 +37,7 @@ function createApp(database) {
   }
 
   function calculateCost(age, type, date, baseCost, date2) {
+    console.log(typeof date2)
     if (type === "night") {
       return calculateCostForNightTicket(age, baseCost);
     } else {
@@ -83,7 +84,6 @@ function createApp(database) {
   }
 
   function isMonday(date, date2) {
-    console.log(typeof date2)
     return date.getDay() === 1;
   }
 
